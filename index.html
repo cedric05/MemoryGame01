@@ -1,0 +1,19 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>Game</title>
+</head>
+
+<body>
+  <script src="https://unpkg.com/vue"></script>
+  <div id="app">
+    <table>
+      <tr v-for="(row, rowindex) in grid">
+        <td v-for="(column, columnindex) in grid" :id="'item_' +row+'_'+column" class="grid-item">0</td>
+      </tr>
+    </table>
+  </div>
+  <script src="./script.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</html>
